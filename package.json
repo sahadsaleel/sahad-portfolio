@@ -1,0 +1,45 @@
+{
+  "name": "sahad-saleel-portfolio",
+  "version": "1.0.0",
+  "description": "Enhanced portfolio website with dark/light mode and dynamic contact form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build process required'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "portfolio",
+    "nodejs",
+    "express",
+    "nodemailer",
+    "contact-form",
+    "fullstack"
+  ],
+  "author": "Sahad Saleel",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.7",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sahadsaleel/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sahadsaleel/portfolio/issues"
+  },
+  "homepage": "https://sahadsaleel.dev"
+}

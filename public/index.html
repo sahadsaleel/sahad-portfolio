@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahad Saleel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <div class="theme-toggle" id="themeToggle">
+    <svg class="theme-icon" id="themeIcon" viewBox="0 0 24 24">
+      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+    </svg>
+  </div>
+
+  <!-- Theme Particles -->
+  <div class="theme-particles" id="themeParticles"></div>
+
+  <!-- ID Card -->
+  <div class="id-card" id="idCard">
+    <div class="card-chain"></div>
+    <div class="card-content">
+      <div class="card-avatar">
+        <img src="/img/profile.png" alt="User Avatar"/>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Sahad Saleel</div>
+        <div class="card-title">Full Stack Developer</div>
+        <div class="card-details">
+          MERN Stack Intern<br>
+          BroCamp IT Institute<br>
+          Kerala, India
+        </div>
+      </div>
+    </div>
+    <div class="card-hologram"></div>
+    <div class="card-id">BCK228</div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation"></div>
+  <div class="floating-particles" id="particles"></div>
+  
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator" id="scrollIndicator"></div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">SS</a>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <!-- Geometric shapes -->
+    <div class="geometric-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+    
+    <!-- Matrix rain effect -->
+    <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
+    
+    <!-- Orbital elements -->
+    <div class="orbital-container">
+      <div class="orbit orbit-1">
+        <div class="planet planet-1"></div>
+      </div>
+      <div class="orbit orbit-2">
+        <div class="planet planet-2"></div>
+      </div>
+      <div class="orbit orbit-3">
+        <div class="planet planet-3"></div>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-subtitle">Full Stack Developer</div>
+      <h1 class="hero-title">
+        <span class="word">Bringing</span>
+        <span class="word">Ideas</span>
+        <span class="word">to</span>
+        <span class="word">Life</span>
+        <span class="word">with</span>
+        <span class="word highlight-word">Code</span>
+      </h1>
+      <p class="hero-description">
+        Hi, I'm <strong class="typewriter-name">Sahad Saleel</strong>. I build seamless user experiences from frontend to backend using the MERN stack.
+      </p>
+      
+      <div class="hero-highlight">
+        <div class="highlight-icon">
+          <div class="code-brackets">&lt;/&gt;</div>
+        </div>
+        <p><span style="color: var(--primary-green); font-weight: 600;">MERN Stack Intern at BroCamp IT Institute</span></p>
+        <p>From a factory floor to production-ready code, my journey is fueled by curiosity, problem-solving, and a drive for real-world solutions.</p>
+      </div>
+
+      <div class="tech-stack">
+        <span class="tech-item" data-tech="js">JavaScript</span>
+        <span class="tech-item" data-tech="node">Node.js</span>
+        <span class="tech-item" data-tech="express">Express.js</span>
+        <span class="tech-item" data-tech="mongo">MongoDB</span>
+        <span class="tech-item" data-tech="react">React.js</span>
+        <span class="tech-item" data-tech="bootstrap">Bootstrap</span>
+        <span class="tech-item" data-tech="git">Git</span>
+      </div>
+
+      <div class="cta-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <span class="btn-text">View My Work</span>
+          <div class="btn-particles"></div>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span class="btn-text">Contact Me</span>
+          <div class="btn-ripple"></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>I'm currently sharpening my skills as a Software Developer Intern at BroCamp, actively building real-world web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js).</p>
+            <p>Transitioned from a mechanical engineering background to tech through self-learning, hands-on practice, and project work. Currently exploring backend development, REST APIs, and full-stack architecture.</p>
+            <p><strong>Education:</strong> BCom, Suresh Gyan Vihar University (2023-2026)</p>
+          </div>
+          <div>
+            <ul class="skills-list">
+              <li class="skill-item">
+                <div class="skill-icon"></div>
+                <span><strong>Frontend:</strong> React.js, EJS, Bootstrap, JavaScript</span>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon"></div>
+                <span><strong>Backend:</strong> Node.js, Express.js, REST APIs</span>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon"></div>
+                <span><strong>Database:</strong> MongoDB, Database Design</span>
+              </li>
+              <li class="skill-item">
+                <div class="skill-icon"></div>
+                <span><strong>Tools:</strong> Git, AWS EC2, Nginx, PM2</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Featured Project</h2>
+        <div class="project-card">
+          <h3 class="project-title">Luxe.com</h3>
+          <p>A luxury perfume e-commerce platform with production-level features, designed and built from scratch. Features include user authentication, admin dashboards, payment integrations, coupon systems, order management, returns processing, comprehensive analytics, and PDF/Excel export functionality.</p>
+          
+          <div class="project-tech">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express.js</span>
+            <span class="tech-tag">MongoDB</span>
+            <span class="tech-tag">EJS</span>
+            <span class="tech-tag">Bootstrap</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">AWS EC2</span>
+            <span class="tech-tag">Nginx</span>
+            <span class="tech-tag">PM2</span>
+          </div>
+
+          <a href="https://luxe-com.shop" target="_blank" class="project-link">
+            View Live Project →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:sahadsaleel7@gmail.com" style="color: var(--primary-green);">sahadsaleel7@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Phone</h4>
+                <span>+91 6235724699</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"></div>
+              <div>
+                <h4>Location</h4>
+                <span>Kerala, India</span>
+              </div>
+            </div>
+          </div>
+          
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" class="form-input" placeholder="Your name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea name="message" class="form-textarea" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="send-btn" id="sendBtn">
+              <span class="btn-text">Send Message</span>
+              <div class="loading-spinner"></div>
+            </button>
+            <div class="form-message" id="formMessage"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Sahad Saleel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
