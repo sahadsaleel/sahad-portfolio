@@ -121,8 +121,6 @@ process.on('SIGINT', () => {
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
   console.log(`Portfolio available at http://localhost:${PORT}`);
-  console.log(`Email API available at http://localhost:${PORT}/api/email`);
-  console.log(`Health check at http://localhost:${PORT}/health`);
 });
 
 module.exports = app;

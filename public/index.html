@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sahad Saleel | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <!-- Theme Toggle Button -->
   <div class="theme-toggle" id="themeToggle">
     <svg class="theme-icon" id="themeIcon" viewBox="0 0 24 24">
-      <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"/>
+      <path
+        d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
     </svg>
   </div>
 
@@ -26,7 +30,7 @@
     <div class="card-chain"></div>
     <div class="card-content">
       <div class="card-avatar">
-        <img src="/img/profile.png" alt="User Avatar"/>
+        <img src="/img/profile.png" alt="User Avatar" />
       </div>
       <div class="card-info">
         <div class="card-name">Sahad Saleel</div>
@@ -45,7 +49,7 @@
   <!-- Animated Background -->
   <div class="bg-animation"></div>
   <div class="floating-particles" id="particles"></div>
-  
+
   <!-- Scroll Indicator -->
   <div class="scroll-indicator" id="scrollIndicator"></div>
 
@@ -72,10 +76,10 @@
       <div class="shape shape-4"></div>
       <div class="shape shape-5"></div>
     </div>
-    
+
     <!-- Matrix rain effect -->
     <canvas id="matrix-canvas" class="matrix-canvas"></canvas>
-    
+
     <!-- Orbital elements -->
     <div class="orbital-container">
       <div class="orbit orbit-1">
@@ -100,15 +104,18 @@
         <span class="word highlight-word">Code</span>
       </h1>
       <p class="hero-description">
-        Hi, I'm <strong class="typewriter-name">Sahad Saleel</strong>. I build seamless user experiences from frontend to backend using the MERN stack.
+        Hi, I'm <strong class="typewriter-name">Sahad Saleel</strong>. I build seamless user experiences from frontend
+        to backend using the MERN stack.
       </p>
-      
+
       <div class="hero-highlight">
         <div class="highlight-icon">
           <div class="code-brackets">&lt;/&gt;</div>
         </div>
-        <p><span style="color: var(--primary-green); font-weight: 600;">MERN Stack Intern at BroCamp IT Institute</span></p>
-        <p>From a factory floor to production-ready code, my journey is fueled by curiosity, problem-solving, and a drive for real-world solutions.</p>
+        <p><span style="color: var(--primary-green); font-weight: 600;">MERN Stack Intern at BroCamp IT Institute</span>
+        </p>
+        <p>From a factory floor to production-ready code, my journey is fueled by curiosity, problem-solving, and a
+          drive for real-world solutions.</p>
       </div>
 
       <div class="tech-stack">
@@ -141,8 +148,10 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
           <div class="about-text">
-            <p>I'm currently sharpening my skills as a Software Developer Intern at BroCamp, actively building real-world web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js).</p>
-            <p>Transitioned from a mechanical engineering background to tech through self-learning, hands-on practice, and project work. Currently exploring backend development, REST APIs, and full-stack architecture.</p>
+            <p>I'm currently sharpening my skills as a Software Developer Intern at BroCamp, actively building
+              real-world web applications using the MERN stack (MongoDB, Express.js, React.js, and Node.js).</p>
+            <p>Transitioned from a mechanical engineering background to tech through self-learning, hands-on practice,
+              and project work. Currently exploring backend development, REST APIs, and full-stack architecture.</p>
             <p><strong>Education:</strong> BCom, Suresh Gyan Vihar University (2023-2026)</p>
           </div>
           <div>
@@ -170,6 +179,164 @@
     </div>
   </section>
 
+  <!-- Education & Experience Section -->
+  <section class="section" id="education">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Education</h2>
+        <div class="edu-exp-container">
+          <!-- Education Timeline -->
+          <div class="timeline-section">
+            <div class="timeline-header"></div>
+            <div class="timeline">
+              <!-- Current Education -->
+              <div class="timeline-item">
+                <div class="timeline-date">2023 - 2026</div>
+                <div class="timeline-content">
+                  <h3>Bachelor of Commerce (BCom)</h3>
+                  <span class="institution">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Gyan_Vihar_Logo.jpg" alt="SGVU Logo"
+                        style="width: 40px; height: 40px; object-fit: contain; border-radius: 8px; background: white; padding: 4px;">
+                      <span style="color: var(--primary-green); font-weight: 600;">Suresh Gyan Vihar University</span>
+                    </div>
+                  </span>
+                  <p>Pursuing undergraduate degree in Commerce with focus on business fundamentals, accounting, and
+                    management principles. Complementing academic studies with intensive technical training in software
+                    development.</p>
+                  <div class="status-badge">
+                    <span>Currently Pursuing</span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <!-- Technical Training -->
+              <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                  <h3>Full Stack Development Training</h3>
+                  <span class="institution">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <img
+                        src="https://yt3.googleusercontent.com/KjbsQTeG_Pcwk8mf-M_oYe5VoZaxwvRv57CPTFGFazRTfuvabRvXpDIxcTCKE721yOV-7m0Q=s900-c-k-c0x00ffffff-no-rj"
+                        alt="Brototype Logo"
+                        style="width: 40px; height: 40px; object-fit: contain; border-radius: 8px; background: white; padding: 4px;">
+                      <span style="color: var(--primary-green); font-weight: 600;">Brototype IT Institute</span>
+                    </div>
+                  </span>
+                  <p>Intensive hands-on training in MERN stack development, focusing on real-world project
+                    implementation, industry best practices, and modern web development technologies.</p>
+                  <ul class="education-highlights">
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Built production-ready e-commerce platform from scratch
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Learned advanced backend concepts and API development
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Gained experience in deployment and server management
+                    </li>
+                  </ul>
+                  <div class="status-badge">
+                    <span>In Progress</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="section-container">
+      <div class="glass-card">
+        <h2 class="section-title">Experience</h2>
+        <div class="edu-exp-container">
+          <!-- Experience Timeline -->
+          <div class="timeline-section">
+            <div class="timeline-header"></div>
+            <div class="timeline">
+              <!-- Current Internship -->
+              <div class="timeline-item">
+                <div class="timeline-date">2024 - Present</div>
+                <div class="timeline-content">
+                  <h3>MERN Stack Developer Intern</h3>
+                  <span class="institution">
+                    <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;">
+                      <img
+                        src="https://yt3.googleusercontent.com/KjbsQTeG_Pcwk8mf-M_oYe5VoZaxwvRv57CPTFGFazRTfuvabRvXpDIxcTCKE721yOV-7m0Q=s900-c-k-c0x00ffffff-no-rj"
+                        alt="Brototype Logo"
+                        style="width: 40px; height: 40px; object-fit: contain; border-radius: 8px; background: white; padding: 4px;">
+                      <span style="color: var(--primary-green); font-weight: 600;">Brototype IT Institute</span>
+                    </div>
+                  </span>
+                  <p>Developing full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Working on
+                    real-world projects with focus on scalable architecture and modern development practices.</p>
+                  <ul class="experience-highlights">
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Built and deployed Luxe.com - A luxury perfume e-commerce platform
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Implemented user authentication, payment integration, and admin dashboards
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Deployed applications on AWS EC2 with Nginx and PM2
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Developed REST APIs and integrated third-party services
+                    </li>
+                  </ul>
+                  <div class="status-badge">
+                    <span>Current Position</span>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <hr>
+              <br>
+              <!-- Previous Background -->
+              <div class="timeline-item">
+                <div class="timeline-date">Pre-2024</div>
+                <div class="timeline-content">
+                  <h3>Career Transition Journey</h3>
+                  <span class="institution" style="color: var(--primary-green); font-weight: 600;">Self-Learning & Skill
+                    Development</span>
+                  <p>Transitioned from a mechanical engineering background to software development through dedicated
+                    self-learning, online courses, and practical project implementation.</p>
+                  <ul class="experience-highlights">
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Self-taught programming fundamentals and web development
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Completed multiple online courses in JavaScript and MERN stack
+                    </li>
+                    <li class="highlight-item">
+                      <span class="highlight-bullet"></span>
+                      Built personal projects to demonstrate technical abilities
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Projects Section -->
   <section class="section" id="projects">
     <div class="section-container">
@@ -177,8 +344,10 @@
         <h2 class="section-title">Featured Project</h2>
         <div class="project-card">
           <h3 class="project-title">Luxe.com</h3>
-          <p>A luxury perfume e-commerce platform with production-level features, designed and built from scratch. Features include user authentication, admin dashboards, payment integrations, coupon systems, order management, returns processing, comprehensive analytics, and PDF/Excel export functionality.</p>
-          
+          <p>A luxury perfume e-commerce platform with production-level features, designed and built from scratch.
+            Features include user authentication, admin dashboards, payment integrations, coupon systems, order
+            management, returns processing, comprehensive analytics, and PDF/Excel export functionality.</p>
+
           <div class="project-tech">
             <span class="tech-tag">Node.js</span>
             <span class="tech-tag">Express.js</span>
@@ -228,7 +397,7 @@
               </div>
             </div>
           </div>
-          
+
           <form class="contact-form" id="contactForm">
             <div class="form-group">
               <label class="form-label">Name</label>
@@ -257,4 +426,5 @@
     <p>© 2025 Sahad Saleel. All rights reserved.</p>
   </footer>
 </body>
+
 </html>

@@ -1,4 +1,4 @@
- gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = document.getElementById('themeIcon');
@@ -480,6 +480,38 @@
           duration: 1,
           ease: "power3.out",
           delay: i * 0.2
+        });
+      });
+
+      // Timeline animations
+      gsap.utils.toArray('.timeline-item').forEach((item, i) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+          },
+          x: -50,
+          opacity: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          delay: i * 0.2
+        });
+      });
+
+      // Timeline header animations
+      gsap.utils.toArray('.timeline-header').forEach((header, i) => {
+        gsap.from(header, {
+          scrollTrigger: {
+            trigger: header,
+            start: "top 90%",
+            toggleActions: "play none none reverse"
+          },
+          y: -30,
+          opacity: 0,
+          duration: 0.6,
+          ease: "power2.out",
+          delay: i * 0.1
         });
       });
 
